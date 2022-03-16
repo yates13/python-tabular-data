@@ -43,6 +43,12 @@ def species_regression():
     Loops through unique species in dataset in order to run linear regression function.
     Figures are renamed with appropriate species information and 
     plt.clf is used to clear the plot between figures. 
+    ------
+    Parameters:
+        species_subset = each uniques species in the data set
+        i = each iteration of the unique species
+    Returns:
+        all unique species from the data 
     """
     species_list = dataset.species.unique()
     print(species_list)
