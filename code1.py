@@ -10,7 +10,19 @@ import matplotlib.pyplot as plt
 from scipy import stats 
 
 def regression(species_subset, i):
-    """Makes a linear regression model based on the given iris species
+    """
+    Makes a linear regression model based on the given iris species that are obtained 
+    through species_regression function
+    ---------
+    Arguments:
+        In: 
+            species_subset = each uniques species in the data set
+            i = each iteration of the unique species
+        Out: 
+            linear regression graphs for each species
+    --------
+    Example:
+        Iris_setosa.png
     """
     x = species_subset.petal_length_cm
     y = species_subset.sepal_length_cm
